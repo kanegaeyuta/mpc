@@ -1,4 +1,4 @@
-import mt
+import mpc.mt as mt
 
 def secret(a, b):
     # シェアを作成(3人にシェア)
