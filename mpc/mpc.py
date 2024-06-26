@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
-import mt
-import additive as ad
-import shamir as sh
+import mpc.mt as mt
+import mpc.additive as ad
+import mpc.shamir as sh
 
 def main():
     while True:
