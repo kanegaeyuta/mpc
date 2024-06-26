@@ -1,1 +1,1 @@
-from mpc.simple_mpc import *
+from mpc.mpc import *
