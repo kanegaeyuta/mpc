@@ -36,6 +36,16 @@ def plus(shares1, shares2, num_shares, prime):
         shares = shares + [(x, y)]
     return shares
 
+# シェアから積を計算
+def times(shares1, shares2, num_shares, prime):
+    shares = []
+    for x in range(1, num_shares + 1):
+        _, y1x = shares1[x - 1]
+        _, y2x = shares2[x - 1]
+        y = (y1x * y2x) % prime
+        shares = shares + [(x, y)]
+    return shares
+
 # シェアから秘密を再構築する
 def interpolate(shares, prime):
     secret = 0
