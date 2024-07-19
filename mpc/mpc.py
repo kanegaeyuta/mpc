@@ -37,7 +37,7 @@ def main():
             num_shares = int(input())   # 生成するシェアの総数
             print("復元に必要な人数")
             threshold = int(input())    # 秘密を再構築するために必要なシェアの最小数
-            prime = 257                 # 通常は大きな素数を選びます
+            prime = 104729                 # 通常は大きな素数を選びます
             shares1 = sh.generate_shares(a, threshold, num_shares, prime)
             print("生成されたシェア1:", shares1)
             shares2 = sh.generate_shares(b, threshold, num_shares, prime)
