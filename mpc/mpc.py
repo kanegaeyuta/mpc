@@ -4,7 +4,7 @@ import mpc.mt as mt
 import mpc.additive as ad
 import mpc.shamir as sh
 
-def main():
+def mpc():
     while True:
         print("シェアの作り方を選んでください")
         print("加法的秘密分散：a  shamirの秘密分散：s")
