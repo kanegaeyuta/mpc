@@ -43,11 +43,14 @@ def main():
             shares2 = sh.generate_shares(b, threshold, num_shares, prime)
             print("生成されたシェア2:", shares2)
             # 和
-            shares = sh.plus(shares1, shares2, num_shares, prime)
+            shares_plus = sh.plus(shares1, shares2, num_shares, prime)
             # シェアから秘密を再構築
-            s = sh.interpolate(shares, prime)
+            s = sh.interpolate(shares_plus, prime)
             print("add secret : ", s)
-            # 
+            # 積
+            shares_times = sh.times(shares1, shares2, num_shares, prime)
+            # シェアから秘密を再構築
+            s = sh.interpolate(shares_times, prime)
             print("times secret : ", s)
             
             break
