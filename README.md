@@ -2,6 +2,8 @@
 ## 使い方
 pip install git+https://github.com/kanegaeyuta/mpc を入力することで実行できる。
 もしくは使いたいディレクトリ内にsetup.pyが存在するように配置し、[pip install .]を入力することで実行することが可能になる。
+
+
 最初はimport mpcによりmpcをインポートし、mpc.mpc()で実行を行うことで簡単に動き方を確認できる。
 
 ### mpc.py
